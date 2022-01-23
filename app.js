@@ -6,8 +6,8 @@ app.use(cors());
 app.use(express.json());
 
 let war = [
-    { id: 1, name: 'gobza', points: 3000 },
-    { id: 2, name: 'gobsa', points: 22005 },
+    { name: 'gobza', points: 3000 },
+    { name: 'gobsa', points: 22005 },
 ];
 
 app.get("/", (req, res) => {
