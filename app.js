@@ -53,11 +53,11 @@ app.patch('/war/:name', (req, res) => {
     
     res.json(updatedPoints)
 })
-
+*/
 // D
 app.delete("/war", (req, res) => {
     war = [];
     res.status(204).send("Points gone");
 })
-*/
+
 module.exports = app;
