@@ -37,23 +37,24 @@ app.get("/war/:name", (req, res) => {
     }
 })
 
-/*
+
 // U
 app.patch('/war/:name', (req, res) => {
     // read new data from body
     let newData = req.body
     // find the data to update - go through the list and match name value to value of dynamic route param of :name
     let requestedName = req.params.name;
-    let matchingPoints = war.find((person) => person.name.toLowerCase() === requestedName.toLowerCase());
+    let matchingPerson = war.find((person) => person.name.toLowerCase() === requestedName.toLowerCase());
     
-    // actually update the stored war data
-    let updatedPoints = { ...matchingPoints, ...newData }
-    let pointIdx = war.indexOf(matchingPoints)
-    war = [ ...war.slice(0, pointIdx), updatedPoints, ...war.slice(pointIdx + 1)]
+    // actually update the stored cats data
+    let updatedPerson = { ...matchingPerson, ...newData }
+    let personIdx = war.indexOf(matchingPerson)
+    war = [ ...war.slice(0, personIdx), updatedPerson , ...war.slice(personIdx + 1)]
     
-    res.json(updatedPoints)
+    res.json(updatedPerson)
 })
-*/
+
+
 // D
 app.delete("/war", (req, res) => {
     war = [];
