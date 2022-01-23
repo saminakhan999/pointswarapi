@@ -9,7 +9,7 @@ let war = [
     { id: 1, name: 'gobza', points: 3000 },
     { id: 2, name: 'gobsa', points: 22005 },
 ];
-/*
+
 app.get("/", (req, res) => {
     res.send("GOBSA IS THE ULTIMATE CHAMPION AND GOBZA IS THE ULTIMATE NOOB HAHAHAHAHAHA");
 });
@@ -20,7 +20,7 @@ app.post('/war', (req, res) => {
     war.push(newPerson);
     res.status(201).json(newPerson);
 })
-*/
+
 // R
 app.get("/war", (req, res) => {
     res.json(war);
