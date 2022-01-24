@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 
 // C
 app.post('/war', (req, res) => {
-    let newPerson = { id: war.length + 1, name: req.body.name, points: 0};
+    let newPerson = { name: req.body.name, points: 0};
     war.push(newPerson);
     res.status(201).json(newPerson);
 })
